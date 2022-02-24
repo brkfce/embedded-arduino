@@ -9,13 +9,13 @@
 
 // TIMER1 compare "interrupt service routine" (ISR) fires when counter value matches OCR1A
 ISR(TIMER1_COMPA_vect) {
-	PORTB ^= _BV(PORTB);	// toggles PORTB register
+	PORTB ^= 0b00100000;	// toggles PORTB register
 }
 
 int main () {
 
 	// put B5 in output mode
-	DDRB |= _BV(PORTB5);
+	DDRB |= 0b00100000;
 
 	// configure timer
 	OCR1A = COUNTER_VALUE;	// output compare register for timer 1
