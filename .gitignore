@@ -53,3 +53,9 @@ dkms.conf
 
 # VSCode / JSON Files
 *.json
+
+# Extensionless Files
+*
+!/**/
+!*.*
+!Makefile
