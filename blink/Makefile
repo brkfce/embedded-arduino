@@ -1,9 +1,10 @@
 # compiler options
 CC=avr-gcc
 CFLAGS= -Os -DF_CPU=16000000UL -mmcu=atmega328p
+BINS=blink blink-interrupt
 
 # compiling
-all: blink.out
+all: $(BINS)
 
 # usb port of arduino
 USBPORT:=/dev/ttyACM0
