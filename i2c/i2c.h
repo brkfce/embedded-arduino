@@ -4,6 +4,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #include <stdbool.h>
+#include <string.h>
 
 
 // initialise two-wire interface (TWI)
